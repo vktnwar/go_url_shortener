@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS urls (
+    short_id VARCHAR(20) PRIMARY KEY,
+    original_url TEXT NOT NULL,
+    clicks INT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
